@@ -1,7 +1,7 @@
 - <a href="#java基础">java基础</a>
   - <a href="#基础">基础</a>
   - <a href="#并发编程">并发编程</a>
-  - <a href="#jvm性能优化">jvm性能优化</a>
+  - <a href="#jvm">jvm</a>
   - <a href="#java8">java8</a>
   - <a href="#日志框架">日志框架</a>
   - <a href="#常用工具">常用工具</a>
@@ -93,9 +93,10 @@
 - 并发工具
 - 线程池
 
-## <a name="jvm性能优化">jvm性能优化</a>
+## <a name="jvm">jvm</a>
 
 - jvm基础工具使用
+- jvm性能优化
 
 ## <a name="java8">java8</a>
 
@@ -149,7 +150,7 @@ todo
 	* 组合
 - 接口设计
 - RESTful api
-- 
+
 
 # <a name = "数据结构算法">数据结构算法</a>
 
@@ -258,7 +259,9 @@ todo
 
 ## <a name = "分布式缓存"> 分布式缓存 </a>
 
+* 服务化后缓存怎么做
 ### <a name = "Redis"> Redis </a>
+
 
 #### <a name = "数据结构"> 数据结构 </a>
 
