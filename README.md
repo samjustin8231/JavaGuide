@@ -116,6 +116,10 @@
 
 ## <a name = "mysql">mysql</a>
 
+### <a name = "存储引擎">存储引擎</a>
+* innodb
+* myism
+
 ### <a name = "事务">事务</a>
 
 ### <a name = "锁">锁</a>
@@ -138,6 +142,14 @@ todo
 - 概要设计
 - 详细设计
 - UML
+	* 继承
+	* 实现接口
+	* 依赖
+	* 聚合
+	* 组合
+- 接口设计
+- RESTful api
+- 
 
 # <a name = "数据结构算法">数据结构算法</a>
 
@@ -199,6 +211,7 @@ todo
 - 策略模式
 - 模板方法
 - 观察者
+- 享元模式
 
 # <a name = "测试">测试</a>
 
@@ -216,6 +229,19 @@ todo
 
 ### <a name = "Spring Cloud">Spring Cloud</a>
 
+Spirng Boot
+
+* 注册中心eureka
+* 配置中心config
+* 网关zuul
+* feign
+* ribbon
+
+
+> 降级限流
+
+todo
+
 ## <a name = "幂等设计">幂等设计</a>
 
 ## <a name = "分布式id生成">分布式id生成</a>
@@ -230,13 +256,24 @@ todo
 
 ## <a name = "负载均衡">负载均衡</a>
 
+## <a name = "分布式缓存"> 分布式缓存 </a>
+
+### <a name = "Redis"> Redis </a>
+
+#### <a name = "数据结构"> 数据结构 </a>
+
+#### <a name = "用途"> 用途 </a>
+
+
+#### <a name = "持久化"> 持久化 </a>
+
+#### <a name = "redis集群"> redis集群</a>
+
+#### <a name = "redis分布式锁"> redis分布式锁</a>
 
 
 ## <a name = "分布式中间件">分布式中间件</a>
 
-### <a name = "缓存">缓存</a>
-
-#### <a name = "Redis"> Redis </a>
 
 ### <a name = "消息队列">消息队列</a>
 
@@ -245,12 +282,60 @@ todo
 
 ### <a name = "zookeeper"> zookeeper </a>
 
+## <a name = "一致性哈希算法">一致性哈希算法</a>
+
 ## <a name = "分布式定时调度">分布式定时调度</a>
 
 # <a name = "高并发系统/中间件设计">高并发系统/中间件设计</a>
 
 - 秒杀系统
 - 消息推送系统
+
+# <a name = "源码分析">源码分析</a>
+
+## <a name = "java基础相关源码">java基础相关源码</a>
+* List
+	* ArrayList
+	* LinkedList
+* Set
+	* HashSet
+* Map
+	* HashMap
+	* treeMap
+
+
+## <a name = "并发包相关">并发包相关</a>
+
+* ThreadLocal
+* AQS
+* Semophare
+* CountDownLatch
+* 线程池
+
+
+## <a name = "SSM相关">SSM相关</a>
+* Spring
+	* ioc
+	* aop
+	* 事务
+	* 
+* Mybatis
+* Spring MVC
+
+## <a name = "分布式相关源码">分布式相关源码</a>
+
+* Spring Cloud
+	* hristrix
+	* ribbon
+* Dubbo
+* tddl
+* 
+
+## <a name = "其他">其他</a>
+* Netty
+* guava
+
+# <a name = "手撕代码">手撕代码</a>
 
 # <a name = "大数据">大数据</a>
 
