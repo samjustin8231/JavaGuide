@@ -65,13 +65,16 @@
   - <a href="#docker"> docker </a>
   - <a href="#k8s"> k8s </a>
 - <a href="#其他技能">其他技能</a>
+  - <a href="#如何写代码">如何写代码</a>
   - <a href="#代码重构">代码重构</a>
   - <a href="#工具使用">工具使用</a>
   - <a href="#文档编写">文档编写</a>
   - <a href="#架构图">架构图</a>
   - <a href="#沟通能力">沟通能力</a>
   - <a href="#code review">code review</a>
-  - <a href="#书籍推荐">书籍推荐</a>
+
+- <a href="#架构师">架构师</a>
+- <a href="#书籍推荐">书籍推荐</a>
 
 ------
 
@@ -371,7 +374,7 @@ todo
 
 # <a name = "其他技能">其他技能</a>
 
-代码重构
+## <a name = "如何写代码">如何写代码</a>
 
 ## <a name = "代码重构">代码重构</a>
 
@@ -383,6 +386,7 @@ todo
 
 - maven
 - idea
+	- 代码调试
 - git
 - svn
 - sourcetree
@@ -396,6 +400,8 @@ todo
 ## <a name = "code review">code review</a>
 
 - 找高手code review
+
+# <a name = "架构师">架构师</a>
 
 # <a name = "书籍推荐">书籍推荐</a>
 
