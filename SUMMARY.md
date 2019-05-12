@@ -8,13 +8,20 @@
 		    * [Set](Java基础/java基础/集合类/Set.md)
 		    * [Map](Java基础/java基础/集合类/Map.md)
 	    * [Java反射机制](Java基础/java基础/Java反射机制.md)
+	    * [单例](Java基础/java基础/单例.md)
 	    * [泛型](Java基础/java基础/泛型.md)
     * [并发编程](Java基础/并发编程.md)
+	    * [JMM](Java基础/并发编程/JMM.md)
+	    * [synchronized](Java基础/并发编程/synchronized.md)
+	    * [Lock](Java基础/并发编程/Lock.md)
 	    * [AQS](Java基础/并发编程/AQS.md)
 	    * [fail-fast](Java基础/并发编程/fail-fast.md)
 	    * [volatile](Java基础/并发编程/volatile.md)
+	    * [ThreadLocal](Java基础/并发编程/ThreadLocal.md)
+	    * [AtomicInteger](Java基础/并发编程/AtomicInteger.md)
+	    * [多线程之间通讯](Java基础/并发编程/多线程之间通讯.md)
+	    * [线程池](Java基础/并发编程/线程池.md)
     * [jvm](Java基础/jvm.md)
-	    * [JMM](Java基础/jvm/JMM.md)
 	    * [垃圾回收](Java基础/jvm/垃圾回收.md)
 	    * [jvm性能优化](Java基础/jvm/jvm性能优化.md)
     * [java8](Java基础/java8.md)
@@ -55,6 +62,8 @@
 		    * [Hystrix](分布式/微服务/SpringCloud/Hystrix.md)
 		    * [Zuul](分布式/微服务/SpringCloud/Zuul.md)
     * [幂等设计](分布式/幂等设计.md)
+    * [RPC](分布式/RPC.md)
+    * [服务治理](分布式/服务治理.md)
     * [分布式id生成](分布式/分布式id生成.md)
     * [分布式锁](分布式/分布式锁.md)
     * [分布式事务](分布式/分布式事务.md)
@@ -62,6 +71,9 @@
     * [Netty](分布式/Netty.md)
     * [Dubbo](分布式/Dubbo.md)
     * [一致性Hash算法](分布式/一致性Hash算法.md)
+    * [服务降级限流雪崩隔离](分布式/服务降级限流雪崩隔离.md)
+	    * [高并发限流](分布式/服务降级限流雪崩隔离/高并发限流.md)
+	    * [服务降级](分布式/服务降级限流雪崩隔离/服务降级.md)
     * [消息队列](分布式/消息队列.md)
 	    * [RabbitMQ](分布式/消息队列/RabbitMQ.md)
 * 大数据
@@ -98,13 +110,42 @@
 		* [bitmap](算法/海量数据算法/bitmap.md)
 		* [BloomFilter](算法/海量数据算法/BloomFilter.md)
 * 源码分析
-    * [Java基础相关](源码分析/Java基础相关.md)
+    * Java基础相关
+	    * [ArrayList源码解析](手撕代码/Java基础相关/ArrayList源码解析.md)
+	    * [LinkedList源码解析](手撕代码/Java基础相关/LinkedList源码解析.md)
+	    * [HashMap源码解析](手撕代码/Java基础相关/HashMap源码解析.md)
     * [Java并发包相关](源码分析/Java并发包相关.md)
-    * [SSM相关](源码分析/SSM相关.md)
-    * [分布式相关](源码分析/分布式相关.md)
+	    * [ThreadLocal源码解析](源码分析/Java并发包相关/ThreadLocal源码解析.md)
+	    * [ReentrentLock源码解析](源码分析/Java并发包相关/ReentrentLock源码解析.md)
+	    * [AQS源码解析](源码分析/Java并发包相关/AQS源码解析.md)
+	    * [线程池源码解析](源码分析/Java并发包相关/线程池源码解析.md)
+    * SSM相关
+	    * [Spring源码解析](源码分析/SSM相关/Spring源码解析.md)
+	    * [SpringMVC源码解析](源码分析/SSM相关/SpringMVC源码解析.md)
+	    * [Mybatis源码解析](源码分析/SSM相关/Mybatis源码解析.md)
+    * 分布式相关
+	    * [限流算法](源码分析/分布式相关/限流算法.md)
+	    * [Dubbo](源码分析/分布式相关/Dubbo.md)
     * [其他](源码分析/其他.md)
 * 手撕代码
-    * [RPC](手撕代码/RPC.md)
+    * Java基础相关
+	    * [手写ArrayList](手撕代码/Java基础相关/手写ArrayList.md)
+	    * [手写LinkedList](手撕代码/Java基础相关/手写LinkedList.md)
+	    * [手写HashMap](手撕代码/Java基础相关/手写HashMap.md)
+    * [Java并发包相关](手撕代码/Java并发包相关.md)
+    * SSM相关
+	    * Spring
+		    * [手写Spring事务框架](手撕代码/SSM相关/Spring/手写Spring事务框架.md)
+		    * [手写@Resource注解@Controller注解](手撕代码/SSM相关/Spring/手写@Resource注解@Controller注解.md)
+	    * SpringMVC
+		    * [手写@RequestMapping](手撕代码/SSM相关/SpringMVC/手写@RequestMapping.md)
+	    * Mybatis
+		    * [纯手写数据库连接池](手撕代码/Mybatis/纯手写数据库连接池.md)
+		    * [纯手写Mybatis注解版框架](手撕代码/SSM相关/Mybatis/纯手写Mybatis注解版框架.md)
+    * [分布式相关](手撕代码/分布式相关.md)
+	    * [RPC](手撕代码/分布式相关/RPC.md)
+	    * [手写SpringBoot框架](手撕代码/分布式相关/手写SpringBoot框架.md)
+    * [其他](手撕代码/其他.md)
 * mysql数据库
 	 * [mysql基础](mysql数据库/mysql基础.md)
 		 * [join底层原理](mysql数据库/mysql基础/join底层原理.md)
@@ -161,4 +202,10 @@
     * [架构图设计](其他技能/架构图设计.md)
 * [架构师](架构师.md)
 * [书籍推荐](书籍推荐.md)
+	* Java基础
+	* 并发编程
+	* mysql
+	* 架构
+		* [亿级流量网站架构核心技术](书籍推荐/架构/亿级流量网站架构核心技术.md)
+	* 大数据
  
