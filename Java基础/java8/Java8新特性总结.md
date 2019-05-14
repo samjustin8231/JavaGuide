@@ -86,5 +86,6 @@ String decoded = new String(Base64.getDecoder().decode(encoded), StandardCharset
 
 # 参考文献
 
-Java8新特性学习笔记
-Java8常用时间操作
+* [Java8新特性学习笔记](https://link.juejin.im/?target=http%3A%2F%2Fluokangyuan.com%2Fjava8xue-xi-bi-ji%2F)
+* [Java8常用时间操作](https://link.juejin.im/?target=http%3A%2F%2Fluokangyuan.com%2Fjava8shi-jian-chang-yong-cao-zuo%2F)
+* [Java8常用的新特性总结](https://juejin.im/post/5cd97ccb518825686b1209ea#heading-10)

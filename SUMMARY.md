@@ -10,6 +10,7 @@
         * [Java反射机制](Java基础/java基础/Java反射机制.md)
         * [单例](Java基础/java基础/单例.md)
         * [泛型](Java基础/java基础/泛型.md)
+        * [注解](Java基础/java基础/注解.md)
         * [Java语法糖自动释放流](Java基础/java基础/Java语法糖自动释放流.md)
     * [并发编程](Java基础/并发编程.md)
         * [JMM](Java基础/并发编程/JMM.md)
@@ -162,6 +163,7 @@
         * [InnoDB](mysql数据库/存储引擎/InnoDB.md)
             * [索引原理](mysql数据库/索引原理.md)
             * [索引优化](mysql数据库/索引原理/索引优化.md)
+            * [InnoDb的BufferPool](mysql数据库/InnoDb的BufferPool.md)
             * [事务](mysql数据库/事务.md)
                 * [redo日志](mysql数据库/事务/redo日志.md)
                 * [undo日志](mysql数据库/事务/undo日志.md)
@@ -190,6 +192,7 @@
         * [观察者模式](代码设计/设计模式/观察者模式.md)
         * [享元模式](代码设计/设计模式/享元模式.md)
     * [Restful规范](其他技能/Restful规范.md)
+    * [如何在代码中使用设计模式](代码设计/如何在代码中使用设计模式.md)
     * [DDD](代码设计/DDD.md)
 * DevOps
     * [Docker](DevOps/Docker.md)

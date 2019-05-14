@@ -17,6 +17,8 @@ redo日志格式
 
 * data：该条redo日志的具体内容。
 
+
+
 # 参考文献
 
 * [redo日志（上）](https://juejin.im/book/5bffcbc9f265da614b11b731/section/5c238f0f518825741e7c3315)
