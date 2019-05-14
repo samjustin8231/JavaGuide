@@ -1,0 +1,86 @@
+# 缓存穿透
+
+## 问题描述
+缓存穿透是指查询一个根本不存在的数据，缓存层和存储层都不会命中，通常出于容错的考虑，如果从存储层查不到数据则不写入缓存层。 整个过程分为如下3步
+
+1. 缓存层不命中。 
+2. 存储层不命中，不将空结果写回缓存。 
+3. 返回空结果
+
+## 解决办法
+### 1.缓存空对象
+缓存空对象 存储层不命中后，仍然将空对象保留到缓存层中，之后再访问这个数据将会从缓存中获取，这样就保护了后端数据源。
+
+
+> 缓存空对象会有两个问题：
+
+* 第一，空值做了缓存，意味着缓存层中存了更多的键，需要更多的内存空间（如果是攻击，问题更严重），比较有效的方法是针对这类数据设置一个较短的过期时间，让其自动剔除。
+* 第二，缓存层和存储层的数据会有一段时间窗口的不一致，可能会对业务有一定影响。例如过期时间设置为5分钟，如果此时存储层添加了这个数据，那此段时间就会出现缓存层和存储层数据的不一致，此时可以利用消息系统或者其他方式清除掉缓存层中的空对象。
+
+代码：
+
+```
+String get(String key) {
+// 从缓存中获取数据
+String cacheValue = cache.get(key);
+// 缓存为空
+if (StringUtils.isBlank(cacheValue)) {
+    // 从存储中获取
+    String storageValue = storage.get(key);
+    cache.set(key, storageValue);
+    // 如果存储数据为空，需要设置一个过期时间(300秒)
+    if (storageValue == null) {
+      cache.expire(key, 60 * 5);
+    }
+    return storageValue;
+} else {
+    // 缓存非空
+    return cacheValue;
+  }
+}
+```
+
+### 2.布隆过滤器拦截
+bloomfilter就类似于一个hash set，用于快速判某个元素是否存在于集合中，其典型的应用场景就是快速判断一个key是否存在于某容器，不存在就直接返回。布隆过滤器的关键就在于hash算法和容器大小，下面先来简单的实现下看看效果，我这里用guava实现的布隆过滤器：
+
+```
+public String getByKey(String key) {
+    // 通过key获取value
+    String value = redisService.get(key);
+    if (StringUtil.isEmpty(value)) {
+        if (bloomFilter.mightContain(key)) {
+            value = userService.getById(key);
+            redisService.set(key, value);
+            return value;
+        } else {
+            return null;
+        }
+    }
+    return value;
+}
+
+```
+
+参考链接：
+
+[
+Redis缓存穿透、缓存雪崩、redis并发问题分析](https://blog.csdn.net/fanrenxiang/article/details/80542580)
+
+# 缓存雪崩
+
+由于缓存层承载着大量请求，有效地保护了存储层，但是如果缓存层由于某些原因不能提供服务，于是所有的请求都会达到存储层，存储层的调用量会暴增，造成存储层也会级联宕机的情况。缓存雪崩的英文原意是stampeding herd（奔逃的野牛），指的是缓存层宕掉后，流量会像奔逃的野牛一样，打向后端存储。
+
+## 解决方案
+预防和解决缓存雪崩问题，可以从以下三个方面进行着手
+
+1.保证缓存层服务高可用性。
+和飞机都有多个引擎一样，如果缓存层设计成高可用的，即使个别节点、个别机器、甚至是机房宕掉，依然可以提供服务，例如前面介绍过的Redis Sentinel和Redis Cluster都实现了高可用
+
+2.依赖隔离组件为后端限流并降级。
+无论是缓存层还是存储层都会有出错的概率，可以将它们视同为资源。作为并发量较大的系统，假如有一个资源不可用，可能会造成线程全部阻塞（hang）在这个资源上，造成整个系统不可用。降级机制在高并发系统中是非常普遍的：比如推荐服务中，如果个性化推荐服务不可用，可以降级补充热点数据，不至于造成前端页面是开天窗。
+推荐一个Java依赖隔离工具Hystrix
+
+# 参考文献
+[缓存设计
+](https://juejin.im/post/5cd8110c6fb9a0322415b7d2#heading-8)
+
