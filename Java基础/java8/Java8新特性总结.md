@@ -1,6 +1,6 @@
 # Java8常用的新特性总结
 ## 1.1.Java8常用特性总览
-![]()
+![](https://github.com/samjustin8231/JavaGuide/blob/master/Java%E5%9F%BA%E7%A1%80/java8/java8%E5%B8%B8%E7%94%A8%E7%89%B9%E6%80%A7)
 
 ## 1.2.lambda表达式
 在Java8中引入了一个新的操作符“->”,该操作符称为箭头操作符或Lambda操作符，左侧：Lambda表示式的参数列表，右侧：Lambda表达式中所要执行的功能，即把函数作为一个方法的参数，通常多用于匿名内部类的简洁写法，同时lambda表达式也是更好的使用StreamAPI的基础。
