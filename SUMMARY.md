@@ -11,6 +11,7 @@
         * [单例](Java基础/java基础/单例.md)
         * [泛型](Java基础/java基础/泛型.md)
         * [注解](Java基础/java基础/注解.md)
+        * [test](Java基础/java基础/test.md)
         * [Java语法糖自动释放流](Java基础/java基础/Java语法糖自动释放流.md)
     * [并发编程](Java基础/并发编程.md)
         * [JMM](Java基础/并发编程/JMM.md)
@@ -32,6 +33,7 @@
         * [Java8新特性总结](Java基础/java8/Java8新特性总结.md)
         * [Lambda](Java基础/java8/Lambda.md)
             * [Stream](Java基础/java8/Stream.md)
+                * [Collector](Java基础/java8/Stream/Collector.md)
             * [Optional](Java基础/java8/Optional.md)
             * [Date](Java基础/java8/Date.md)
     * [日志框架](Java基础/日志框架.md)
@@ -222,4 +224,5 @@
     * 架构
         * [亿级流量网站架构核心技术](书籍推荐/架构/亿级流量网站架构核心技术.md)
     * 大数据
+    * [待买的书](书籍推荐/待买的书.md)
 
