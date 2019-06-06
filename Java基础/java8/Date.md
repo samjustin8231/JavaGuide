@@ -335,3 +335,6 @@ System.out.println(gc);
 # 参考文献
 * [Java8 日期、时间操作](https://www.cnblogs.com/ark-blog/p/9694950.html)
 * [java8 时间使用](https://www.cnblogs.com/guozp/p/10342775.html)
+* [java8基于LocalDateTime的日期时间工具类
+](java8基于LocalDateTime的日期时间工具类
+)

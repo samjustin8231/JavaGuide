@@ -1,11 +1,19 @@
 
+# 知识准备
+
+- **spring boot**
+- spring mvc
+- spring
+- maven
+- git
 
 
-# SpringCloud与Dubbo对比
-![](springcloud与dubbo对比.png)
 
-# 面试题
-todo 
+
+
+
+
+
 
 # SpringClud入门概述
 
