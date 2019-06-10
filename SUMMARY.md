@@ -54,8 +54,10 @@
         * [Spring+Mybatis读数据源](Web框架/Mybatis/Spring+Mybatis读数据源.md)
         * [Mybatis运行原理](Web框架/Mybatis/Mybatis运行原理.md)
 * 分布式
+	 * [EHCache](分布式/EHCache.md)
     * [分布式缓存](分布式/分布式缓存.md)
         * [redis](分布式/分布式缓存/redis.md)
+	        * [redis单线程](分布式/分布式缓存/redis单线程.md)
             * [数据结构](分布式/分布式缓存/redis/数据结构.md)
                 * [字符串](分布式/分布式缓存/redis/数据结构/字符串.md)
                 * [List](分布式/分布式缓存/redis/数据结构/List.md)
@@ -64,6 +66,7 @@
             * [redis分布式锁](分布式/分布式缓存/redis/redis分布式锁.md)
             * [redis集群](分布式/分布式缓存/redis/redis集群.md)
             * [redis缓存穿透、雪崩](分布式/分布式缓存/redis/redis缓存穿透、雪崩.md)
+            * [springboot整合redis](分布式/分布式缓存/redis/springboot整合redis.md)
     * [微服务](分布式/微服务.md)
         * [SpringBoot](分布式/微服务/SpringBoot.md)
             * [SpringBoot自动化配置原理](分布式/微服务/SpringBoot/SpringBoot自动化配置原理.md)
@@ -83,7 +86,7 @@
     * [分布式id生成](分布式/分布式id生成.md)
     * [分布式锁](分布式/分布式锁.md)
     * [分布式事务](分布式/分布式事务.md)
-	    * 
+	    * [分布式事务电商示例讲解](分布式/分布式事务/分布式事务电商示例讲解.md)
     * [负载均衡](分布式/负载均衡.md)
     * [Netty](分布式/Netty.md)
     * [Dubbo](分布式/Dubbo.md)
