@@ -1,4 +1,5 @@
 
+# 一、Storm引文
 这块给大家解释一下，就是说，有些技术我们可能就是简单带着大家去用一下就好了
 
 nginx，java，一般都会一些
@@ -107,3 +108,36 @@ storm做各种实时类的项目都ok
 （5）使用的便捷性：核心语义非常的简单，开发起来效率很高
 
 用起来很简单，开发API还是很简单的
+
+
+# 二、Storm的集群架构以及核心概念
+
+1、Storm的集群架构
+
+Nimbus，Supervisor，ZooKeeper，Worker，Executor，Task
+
+2、Storm的核心概念
+
+Topology，Spout，Bolt，Tuple，Stream
+
+拓扑：务虚的一个概念
+
+Spout：数据源的一个代码组件，就是我们可以实现一个spout接口，写一个java类，在这个spout代码中，我们可以自己尝试去数据源获取数据，比如说从kafka中消费数据
+
+bolt：一个业务处理的代码组件，spout会将数据传送给bolt，各种bolt还可以串联成一个计算链条，java类实现了一个bolt接口
+
+一堆spout+bolt，就会组成一个topology，就是一个拓扑，实时计算作业，spout+bolt，一个拓扑涵盖数据源获取/生产+数据处理的所有的代码逻辑，topology
+
+tuple：就是一条数据，每条数据都会被封装在tuple中，在多个spout和bolt之间传递
+
+stream：就是一个流，务虚的一个概念，抽象的概念，源源不断过来的tuple，就组成了一条数据流
+
+> storm集群架构
+
+![](storm集群架构.png)
+
+> storm核心概念
+
+![](storm核心概念.png)
+
+
