@@ -12,3 +12,11 @@ todo
 
 todo
 
+
+# Maven冲突排查
+
+todo 
+
+
+# 参考文献
+- [通过IDEA快速定位和排除依赖冲突](https://juejin.im/post/5d005107f265da1b725bfa46)
