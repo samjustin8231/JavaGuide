@@ -109,9 +109,11 @@
         * [Strom应用示例](大数据/Storm/Strom应用示例.md)
     * [Flink](大数据/Flink.md)
     * [kafka](大数据/kafka.md)
-    * [ES](大数据/ES.md)
-        * [倒排索引](大数据/ES/倒排索引.md)
-        * [ELK](大数据/ES/ELK.md)
+    * [搜索引擎](大数据/搜索引擎.md)
+        * [倒排索引](大数据/搜索引擎/倒排索引.md)
+        * [solr](大数据/搜索引擎/solr.md)
+        * [ES](大数据/搜索引擎/ES.md)
+	        * [ELK](大数据/搜索引擎/ES/ELK.md)
 * 网络
 * 操作系统
 * 数据结构

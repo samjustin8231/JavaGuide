@@ -53,7 +53,34 @@ Redis 集群中内置了 16384 个哈希槽，当需要在 Redis 集群中放置
 
 # 二、redis使用
 
-todo 
+## String
+
+- set key value
+- get key
+
+todo
+
+## list
+
+todo
+
+## set
+
+- hset key item value
+- hget key item
+
+todo
+
+## map
+
+todo
+
+## 通用
+
+- keys *
+- ttl
+- expire
+ 
 
 
 # 三、java链接redis
