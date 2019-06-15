@@ -1,7 +1,14 @@
 
-架构师必备技能。
+> JVM参数调优是架构师必备技能。
 
-# JVM参数配置
+- 调优的目的：`减少垃圾回收次数`。
+	- 因为垃圾回收的时候会是其他`的工作线程暂停。`
+	- 如果JVM内存设置的比较小，则会比较频繁地回收。
+- 垃圾回收的时候`尽量在新生代回收`，尽量少的在老年代回收。
+
+# 一. JVM参数配置
+
+JVM提供了诸多的参数进行JVM各个方面内存大小的设置，为Java应用进行优化提供了诸多的工具，本文将会详细分析各个参数的功能与使用。
 
 ```
 -XX:+PrintGC      每次触发GC的时候打印相关日志
@@ -23,12 +30,14 @@
 
 让垃圾回收最好在新生代回收，尽可能少的在老年代回收。
 
-## 堆内存大小配置
+## 1.1 堆内存大小配置
 
-JVM调优一般都是针对堆内存进行配置调优。
+JVM调优一般都是针对`堆内存`进行配置调优。
 
-使用示例:  -Xmx20m -Xms5m  
+使用示例:  -Xms5m  -Xmx20m
 说明： 当下Java应用最大可用内存为20M， 初始内存为5M
+
+在run configuration中配置JVM arguments: -Xms5m  -Xmx20m
 
 ```
 -Xms5m -Xmx20m
@@ -43,7 +52,7 @@ System.out.print("已经使用内存");
 System.out.println(Runtime.getRuntime().totalMemory() / 1024.0 / 1024 + "M");
 ```
 
-## 配置新生代比例
+## 1.2 配置新生代中edgn/survivor比例
 
 使用示例:-Xms20m -Xmx20m -Xmn1m -XX:SurvivorRatio=2 -XX:+PrintGCDetails -XX:+UseSerialGC
 
@@ -56,17 +65,24 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-## 设置新生代与老年代比例参数
+GC日志分析
+
+todo 
+
+## 1.3 设置新生代与老年代比例参数
 
 使用示例: -Xms20m -Xmx20m -XX:SurvivorRatio=2 -XX:+PrintGCDetails -XX:+UseSerialGC
 -XX:NewRatio=2
 
-说明：堆内存初始化值20m,堆内存最大值20m，新生代最大值可用1m，eden空间和from/to空间的比例为2/1
-新生代和老年代的占比为1/2
+说明：
 
-# OutOfMemoryError异常
+- 堆内存初始化值20m,堆内存最大值20m，新生代最大值可用1m，eden
+- 空间和from/to空间的比例为2/1
+- 新生代和老年代的占比为1/2
 
-## Java堆溢出
+# 二. OutOfMemoryError异常
+
+## 2.1 Java堆溢出
 错误原因: java.lang.OutOfMemoryError: Java heap space 堆内存溢出
 
 解决办法:设置堆内存大小 // -Xms1m -Xmx10m -XX:+PrintGCDetails -XX:+HeapDumpOnOutOfMemoryError
@@ -82,7 +98,7 @@ for (int i = 0; i < 10; i++) {
 System.out.println("添加成功...");
 ```
 
-## 虚拟机栈溢出
+## 2.2 虚拟机栈溢出
 错误原因: java.lang.StackOverflowError  栈内存溢出
 栈溢出 产生于递归调用，循环遍历是不会的，但是循环方法里面产生递归调用， 也会发生栈溢出。 
 
@@ -108,7 +124,7 @@ public class JvmDemo04 {
 
 ```
 
-# 内存溢出和内存泄漏
+# 三. 内存溢出和内存泄漏
 
 > 内存溢出与内存泄漏区别
 
@@ -129,7 +145,7 @@ Java内存泄漏就是没有及时清理内存垃圾，导致系统无法再给�
 
 内存泄漏包含了内存溢出。
 
-# Tomcat调优配置测试
+# 四. Tomcat调优配置测试
 
 
 JMeter工具
@@ -148,5 +164,9 @@ jmap
 
 
 ## 
+
+# 垃圾收集器
+
+todo 
 
 # 参考文献
