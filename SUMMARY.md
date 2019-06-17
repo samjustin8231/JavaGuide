@@ -27,8 +27,9 @@
         * [多线程之间通讯](Java基础/并发编程/多线程之间通讯.md)
         * [线程池](Java基础/并发编程/线程池.md)
     * [jvm](Java基础/jvm.md)
-	    * [java内存结构](Java基础/jvm/java内存结构.md)
+        * [java内存结构](Java基础/jvm/java内存结构.md)
         * [垃圾回收](Java基础/jvm/垃圾回收.md)
+        * [Java四种引用](Java基础/jvm/Java四种引用.md)
         * [jvm实战参数调优](Java基础/jvm/jvm实战参数调优.md)
         * [jvm性能优化](Java基础/jvm/jvm性能优化.md)
     * [java8](Java基础/java8.md)
@@ -57,7 +58,7 @@
     * [EHCache](分布式/EHCache.md)
         * [分布式缓存](分布式/分布式缓存.md)
             * [redis](分布式/分布式缓存/redis.md)
-	            * [redis安装和使用](分布式/分布式缓存/redis安装和使用.md)
+                * [redis安装和使用](分布式/分布式缓存/redis安装和使用.md)
                 * [redis单线程](分布式/分布式缓存/redis单线程.md)
                 * [数据结构](分布式/分布式缓存/redis/数据结构.md)
                     * [字符串](分布式/分布式缓存/redis/数据结构/字符串.md)
@@ -113,9 +114,10 @@
         * [倒排索引](大数据/搜索引擎/倒排索引.md)
         * [solr](大数据/搜索引擎/solr.md)
         * [ES](大数据/搜索引擎/ES.md)
-	        * [ELK](大数据/搜索引擎/ES/ELK.md)
+            * [ELK](大数据/搜索引擎/ES/ELK.md)
 * 网络
 * 操作系统
+* 计算机组成原理
 * 数据结构
     * 数组
     * 链表
@@ -137,9 +139,10 @@
         * [BloomFilter](算法/海量数据算法/BloomFilter.md)
 * 源码分析
     * Java基础相关
-        * [ArrayList源码解析](手撕代码/Java基础相关/ArrayList源码解析.md)
-        * [LinkedList源码解析](手撕代码/Java基础相关/LinkedList源码解析.md)
-        * [HashMap源码解析](手撕代码/Java基础相关/HashMap源码解析.md)
+        * [ArrayList源码解析](源码分析/Java基础相关/ArrayList源码解析.md)
+        * [LinkedList源码解析](源码分析/Java基础相关/LinkedList源码解析.md)
+        * [HashMap源码解析](源码分析/Java基础相关/HashMap源码解析.md)
+        * [ConcurrentHashMap源码解析](源码分析/Java基础相关/ConcurrentHashMap源码解析.md)
     * [Java并发包相关](源码分析/Java并发包相关.md)
         * [ThreadLocal源码解析](源码分析/Java并发包相关/ThreadLocal源码解析.md)
         * [ReentrentLock源码解析](源码分析/Java并发包相关/ReentrentLock源码解析.md)
@@ -188,14 +191,15 @@
             * [锁机制](mysql数据库/锁机制.md)
             * [mysql优化](mysql数据库/mysql优化.md)
             * [数据库连接池](mysql数据库/数据库连接池.md)
+    * [数据库架构方案](mysql数据库/数据库架构方案.md)
 * [高并发系统设计](高并发系统设计.md)
     * [秒杀系统设计](高并发系统设计/秒杀系统设计.md)
     * [消息推送系统](高并发系统设计/消息推送系统.md)
 * [项目案例](项目案例.md)
-	* [淘淘商城](项目案例/淘淘商城.md)
-		* [SSO](项目案例/淘淘商城/SSO.md)
-		* [Nginx使用](项目案例/淘淘商城/Nginx使用.md)
-		* [FastFDS图片服务器](项目案例/淘淘商城/FastFDS图片服务器.md)
+    * [淘淘商城](项目案例/淘淘商城.md)
+        * [SSO](项目案例/淘淘商城/SSO.md)
+        * [Nginx使用](项目案例/淘淘商城/Nginx使用.md)
+        * [FastFDS图片服务器](项目案例/淘淘商城/FastFDS图片服务器.md)
 * 代码设计
     * [UML](代码设计/UML.md)
     * [C4](代码设计/C4.md)
@@ -240,6 +244,16 @@
         * [文档编写](其他技能/文档编写.md)
         * [架构图设计](其他技能/架构图设计.md)
 * [架构师](架构师.md)
+    * [互联网发展三阶段](架构师/互联网发展三阶段.md)
+    * [互联网架构演进之路](架构师/互联网架构演进之路.md)
+    * [单体架构设计与实践](架构师/单体架构设计与实践.md)
+    * [水平分层架构设计与实践](架构师/水平分层架构设计与实践.md)
+    * [面向服务架构设计与实践](架构师/面向服务架构设计与实践.md)
+    * [微服务架构设计与实践](架构师/微服务架构设计与实践.md)
+    * [服务网格架构设计与实践](架构师/服务网格架构设计与实践.md)
+    * [千亿级真实案例实践](架构师/千亿级真实案例实践.md)
+* [后端技术栈](后端技术栈.md)
+* [开源项目学习](开源项目学习.md)
 * [书籍推荐](书籍推荐.md)
     * Java基础
     * 并发编程
