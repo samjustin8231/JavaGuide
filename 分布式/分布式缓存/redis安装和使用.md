@@ -468,6 +468,7 @@ public class JedisClientCluster implements JedisClient {
 
 # 参考文献
 
-todo 
+- [后端开发应该掌握的Redis基础](https://juejin.im/post/5d078cd6f265da1b8466e62c)
+
 
 
