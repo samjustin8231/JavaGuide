@@ -84,4 +84,6 @@ todo
 # 参考文献
 - [Hystrix介绍](https://www.cnblogs.com/cjsblog/p/9391819.html)
 - [Hystrix原理与实战](https://blog.csdn.net/loushuiyifan/article/details/82702522)
+- [Hystrix - 用 Hystrix 构建高可用服务架构](https://www.jianshu.com/p/e90b38d491d5)
+- [Hystrix - 电商网站的商品详情页系统架构](https://www.jianshu.com/p/f7c3bc37841c)
 

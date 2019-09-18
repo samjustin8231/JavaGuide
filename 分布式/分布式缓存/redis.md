@@ -40,5 +40,10 @@ update或者delete数据库钱，查询redis是否存在该数据，存在的话
 上面这种操作，如果并发量很小的情况下基本没问题，但是高并发的情况请注意下面场景：
 为了update先删掉了redis中的该数据，这时候另一个线程执行查询，发现redis中没有，瞬间执行了查询SQL，并且插入到redis中一条数据，回到刚才那个update语句，这个悲催的线程压根不知道刚才那个该死的select线程犯了一个弥天大错！于是这个redis中的错误数据就永远的存在了下去，直到下一个update或者delete。 
 
+# redis书推荐
+
+- redis开发与运维
+- redis设计与实现
+
 # 参考文献
 [Redis闲谈（1）：构建知识图谱](https://juejin.im/post/5cce56cee51d453aa307c80e)
