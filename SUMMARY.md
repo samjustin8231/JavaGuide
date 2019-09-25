@@ -285,6 +285,7 @@
         * [软件开发过程](其他技能/软件开发过程.md)
         * [codeReview](其他技能/codeReview.md)
         * [git使用](其他技能/git使用.md)
+            * [git撤销commit](其他技能/git使用/git撤销commit.md)
         * [svn使用](其他技能/svn使用.md)
         * [gitbook使用](其他技能/gitbook使用.md)
         * [如何写代码](其他技能/如何写代码.md)
