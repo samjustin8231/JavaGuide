@@ -379,3 +379,6 @@ Spring声明式事务管理器类：
 Jdbc技术：DataSourceTransactionManager
 Hibernate技术：HibernateTransactionManager
 ```
+
+# 参考文献
+- [Spring AOP详细介绍](https://blog.csdn.net/JinXYan/article/details/89302126)

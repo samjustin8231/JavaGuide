@@ -490,3 +490,4 @@ ArrayList，完！
 # 参考文献
 
 - [给jdk写注释系列之jdk1.6容器(1)-ArrayList源码解析](https://www.cnblogs.com/tstd/p/5042087.html)
+- [java集合与数据结构-源码解析](https://www.cnblogs.com/tstd/tag/java%E9%9B%86%E5%90%88%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/)

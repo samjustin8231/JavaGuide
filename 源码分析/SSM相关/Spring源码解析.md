@@ -8,3 +8,4 @@ Spring容器就相当于一个大的水桶，里面装着很多水——bean对�
 # 参考文献
 
 - [深入Spring源码系列（二）——深入Spring容器，通过源码阅读和时序图来彻底弄懂Spring容器（上）](https://blog.csdn.net/coderbruis/article/details/85940756)
+- [Spring IOC 容器源码分析](https://javadoop.com/post/spring-ioc#toc0)
