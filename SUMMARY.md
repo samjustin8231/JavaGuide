@@ -125,6 +125,8 @@
         * [SpringBoot](分布式/微服务/SpringBoot.md)
             * [@RestControler](分布式/微服务/SpringBoot/RestControler.md)
             * [@EnableAutoConfiguration](分布式/微服务/SpringBoot/EnableAutoConfiguration.md)
+            * [@SpringBootApplication](分布式/微服务/SpringBoot/SpringBootApplication.md)
+            * [@ComponentScan](分布式/微服务/SpringBoot/ComponentScan.md)
             * [@Bean](分布式/微服务/SpringBoot/Bean.md)
             * [@Compnent](分布式/微服务/SpringBoot/Compnent.md)
             * [@Configuration](分布式/微服务/SpringBoot/@Configuration.md)
@@ -432,4 +434,6 @@
 * [职业规划](职业规划.md)
 * [面试题](面试题.md)
 * [他人文章(技术篇)](他人文章-技术篇.md)
+* [学习记录](学习记录.md)
+    * [视频学习](学习记录/视频学习.md)
 
