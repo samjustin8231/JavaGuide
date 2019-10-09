@@ -245,3 +245,4 @@ talk is cheap, show me the code
 # 参考文献
 
 * [数据库缓存最终一致性的四种方案](https://juejin.im/post/5d5c99b66fb9a06ae072060d)
+* [聊聊数据库与缓存数据一致性问题](https://juejin.im/post/5d7c7a14f265da03f47c4f93#heading-2)
