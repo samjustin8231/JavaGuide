@@ -27,6 +27,45 @@ volatile禁止JVM和处理器对使用volatile修饰的关键字进行指令进�
 todo
 
 
+# volatile应用点
+
+1. 单例模式DCL代码
+
+DCL （Double Check Lock双端检锁机制）在加锁前和加锁后都进行一次判断
+
+```
+    public static SingletonDemo getInstance() {
+        if (instance == null) {
+            synchronized (SingletonDemo.class) {
+                if (instance == null) {
+                    instance = new SingletonDemo();
+                }
+            }
+        }
+        return instance;
+    }
+
+```
+
+DCL（双端检锁）机制不一定线程安全，原因时有指令重排的存在，加入volatile可以禁止指令重排
+
+原因是在某一个线程执行到第一次检测，读取到instance不为null时，instance的引用对象可能没有完成初始化。instance=new SingleDemo();可以被分为一下三步（伪代码）：
+
+```
+memory = allocate();//1.分配对象内存空间
+instance(memory);	//2.初始化对象
+instance = memory;	//3.设置instance执行刚分配的内存地址，此时instance!=null
+
+```
+
+步骤2和步骤3不存在数据依赖关系，而且无论重排前还是重排后程序的执行结果在单线程中并没有改变，因此这种重排优化时允许的，如果3步骤提前于步骤2，但是instance还没有初始化完成
+
+但是指令重排只会保证串行语义的执行的一致性（单线程），但并不关心多线程间的语义一致性。
+
+所以当一条线程访问instance不为null时，由于instance示例未必已初始化完成，也就造成了线程安全问题。
+
+为解决以上问题，可以将SingletongDemo实例上加上volatile
+
 
 
 # 参考文献
