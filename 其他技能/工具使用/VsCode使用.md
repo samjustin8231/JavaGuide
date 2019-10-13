@@ -22,8 +22,5 @@ Command + Shift + U 显示输出面板
 # 参考文献
 
 - [mac os下vscode快捷键](https://www.cnblogs.com/informatics/p/8315339.html)
-<<<<<<< HEAD
-
-=======
 - [VsCode使用教程](https://www.jianshu.com/p/11554732b323)
->>>>>>> b85ff90be73f4ccd4d4dd19181955364e89fc73c
+
