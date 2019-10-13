@@ -7,4 +7,4 @@
 
 
 # 参考文献
-[如何完美的向面试官阐述你对IOC的理解？](https://juejin.im/post/5ca40fa5f265da309e173e62)
+- [如何完美的向面试官阐述你对IOC的理解？](https://juejin.im/post/5ca40fa5f265da309e173e62)

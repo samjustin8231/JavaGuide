@@ -71,3 +71,4 @@ instance = memory;	//3.设置instance执行刚分配的内存地址，此时inst
 # 参考文献
 
 - [回顾《深入理解 Java 虚拟机》 之内存模型和 volatile 关键字](https://chenjiayang.me/2019/02/12/jvm-java-volatile/)
+- [Java并发编程之Volatile](https://www.jianshu.com/p/e34469924714)

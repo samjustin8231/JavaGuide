@@ -46,4 +46,5 @@ update或者delete数据库钱，查询redis是否存在该数据，存在的话
 - redis设计与实现
 
 # 参考文献
-[Redis闲谈（1）：构建知识图谱](https://juejin.im/post/5cce56cee51d453aa307c80e)
+- [Redis闲谈（1）：构建知识图谱](https://juejin.im/post/5cce56cee51d453aa307c80e)
+- [Redis由浅入深深深深深剖析](https://juejin.im/post/5d809a89e51d456206115ab3)

@@ -45,21 +45,26 @@ StringBuffer：线程安全的
 	
 # StringBuilder为什么是非线程安全的
 
-todo 
+- 在分析设个问题之前我们要知道StringBuilder和StringBuffer的内部实现跟String类一样，都是通过一个char数组存储字符串的，不同的是String类里面的char数组是final修饰的，是不可变的，而StringBuilder和StringBuffer的char数组是可变的。
+
+
+
 
 ```
 public AbstractStringBuilder append(String str) {
     if (str == null)
         return appendNull();
     int len = str.length();
-    ensureCapacityInternal(count + len);
-    str.getChars(0, len, value, count);
+    ensureCapacityInternal(count + len);    // 扩容
+    str.getChars(0, len, value, count);//将String对象里面char数组里面的内容拷贝到StringBuilder对象的char数组里面，可能报ArrayIndexOutOfBoundsException
     count += len;
     return this;
 }
 
 ```
-非原子操作
+
+- 非原子操作
+
 
 
 	
@@ -69,3 +74,7 @@ public AbstractStringBuilder append(String str) {
 2. 对于字符串连接操作较频繁，并且是多线程操作，使用StringBuffer
 3. 对于字符串连接操作比较频繁，但是是单线程操作的，建议使用StringBuilder。
 
+
+# 参考
+
+- [StringBuilder为什么线程不安全](https://juejin.im/post/5d6228046fb9a06add4e37fe)

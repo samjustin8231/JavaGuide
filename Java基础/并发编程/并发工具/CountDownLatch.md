@@ -136,3 +136,4 @@ All runner passed the end point
 # 参考文献
 
 - [Java并发工具类（闭锁CountDownLatch）](https://juejin.im/post/5a3267646fb9a0451d4180aa)
+- [死磕 java同步系列之CountDownLatch源码解析【讲得好】](https://mp.weixin.qq.com/s/QHFXKVybKz_iwgC8reGfPQ)

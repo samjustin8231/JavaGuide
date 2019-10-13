@@ -297,3 +297,5 @@ vim的入门门槛比较高，幸运的是，用多了，你就无法释手了�
 - [linux查找日志技巧](https://www.cnblogs.com/chjbbs/p/5761741.html)
 - [Linux日志查找关键字](https://blog.csdn.net/zeng308041977/article/details/80339370)
 - [如何在Linux下优雅的查询日志](https://www.cnblogs.com/Trainoo/p/9218830.html)
+- [
+linux 下vim的使用（学习必看！！重要）](https://blog.csdn.net/yangshuainan/article/details/78219604)

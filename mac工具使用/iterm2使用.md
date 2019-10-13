@@ -45,6 +45,7 @@ ctrl + u 清空当前行，无论光标在什么位置
 # 参看文献
 
 * [iterm2 快捷键大全 Mac item2常用快捷键](https://www.jianshu.com/p/68e1c92564dc)	
+* [iTerm2 配色方案（oh-my-zsh& Powerline）[有用]](https://blog.csdn.net/dataiyangu/article/details/82768735)
 
 
 
