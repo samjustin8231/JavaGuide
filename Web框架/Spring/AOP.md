@@ -382,4 +382,5 @@ Hibernate技术：HibernateTransactionManager
 
 # 参考文献
 - [Spring AOP详细介绍](https://blog.csdn.net/JinXYan/article/details/89302126)
+- [Spring如何实现AOP，请不要再说cglib了！](https://juejin.im/post/5dac17fee51d4524ba0fd40c)
 - [Spring AOP应用场景你还不知道？这篇一定要看！](https://juejin.im/post/5d836bb76fb9a06b3260abe7)

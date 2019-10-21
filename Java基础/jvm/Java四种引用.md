@@ -80,5 +80,6 @@ ReferenceQueue 引用其实也可以归纳为引用中的一员，可以和上�
 
 # 参考文献
 - [连引用都答不上，凭什么说你是Java服务端开发](https://juejin.im/post/5d06de9d51882559ee6f4212)
+- [【JVM从小白学成大佬】3.深入解析强引用、软引用、弱引用、幻象引用](https://juejin.im/post/5d835f8d6fb9a06b1f146934)
 
 

@@ -135,3 +135,4 @@ pom.xml文件
 
 - [聊聊分布式锁的实现(一)](https://juejin.im/post/5d81f98051882562861585ee)
 - [死磕 java同步系列之redis分布式锁进化史](https://mp.weixin.qq.com/s/hOaZ6JWhtb0ybbShgKhaHQ)
+- [基于Redis的分布式锁实现](https://juejin.im/post/5cc165816fb9a03202221dd5#heading-2)
