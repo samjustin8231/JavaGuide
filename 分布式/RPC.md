@@ -10,3 +10,8 @@
 gRPC
 Thrift
 Dubbo
+
+
+# 参考
+- [基于Netty实现简易RPC框架
+](https://juejin.im/post/5d98aebd51882560a8306915)
