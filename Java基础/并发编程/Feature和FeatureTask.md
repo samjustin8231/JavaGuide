@@ -61,5 +61,6 @@ todo
 - [深度学习Java Future （一）](https://www.jianshu.com/p/bce9301f1adb)
 - [Future接口和Callable接口以及FeatureTask详解](https://www.cnblogs.com/cuimiemie/p/6445154.html)
 - [Java并发编程：Callable、Future和FutureTask](https://www.cnblogs.com/dolphin0520/p/3949310.html)
+- [Java进阶之FutureTask的用法及解析](https://blog.csdn.net/chenliguan/article/details/54345993)
 
 

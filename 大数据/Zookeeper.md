@@ -49,3 +49,4 @@ consul, eureka, zookeeper, redis
 * [咱们一起聊聊Zookeeper](https://juejin.im/post/5b03d58a6fb9a07a9e4d8f01)
 * [Zookeeper典型应用场景介绍](https://blog.csdn.net/u013468915/article/details/80955110)
 * [原创ZooKeeper入门实战教程（一）-介绍与核心概念](https://blog.csdn.net/liyiming2017/article/details/83035157)
+* [Zookeeper学习系列【一】 教会你Zookeeper的一些基础概念](https://juejin.im/post/5cda1fc5f265da0385581983)
