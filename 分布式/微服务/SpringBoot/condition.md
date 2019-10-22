@@ -19,4 +19,5 @@ todo
 # 参考文献
 
 - [Spring Boot2 系列教程(七)理解自动化配置的原理](https://juejin.im/post/5d88715a6fb9a06ace528e13)
+- [Spring Boot @Condition 注解，组合条件你知道吗](https://juejin.im/post/5d4239785188255d5f403e05)
 

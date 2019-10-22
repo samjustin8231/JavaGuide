@@ -33,4 +33,5 @@ Redo log可以简单分为以下两个部分：
 
 * [redo日志（上）](https://juejin.im/book/5bffcbc9f265da614b11b731/section/5c238f0f518825741e7c3315)
 * [浅析MySQL事务中的redo与undo](https://juejin.im/post/5c3c5c0451882525487c498d)
+* [我所理解的MySQL中的DML语句和日志的关系](https://juejin.im/post/5dad657df265da5bb977dd00)
 
