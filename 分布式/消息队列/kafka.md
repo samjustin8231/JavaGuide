@@ -84,9 +84,12 @@ Follower。Kafka的副本具有一定的同步机制,在每个副本集合中,�
 ## 生产者
 生产者主要是生产消息,并将消息按照一定的规则推送到Topic的分区中
 
+**生产者只能向leader中写入数据，leader会负责将数据同步到followers中去。**
+
 
 ## 消费者
 消费者主要是从Topic中拉取消息,并对消息进行消费。Consumer维护消费者消费者消费到Partition的哪一个位置(offset的值)这一信息。**在Kafka中,多个Consumer可以组成一个Consumer Group,一个Consumer只能属于一个Consumer Group。Consumer Group保证其订阅的Topic中每一个分区只被分配给此Consumer Group中的一个消费者处理,所以如果需要实现消息的广播消费,则将消费者放在多个不同的Consumer Group中即可实现。**通过向Consumer Group中动态的添加适量的Consumer,可以出发Kafka的Rebalance操作重新分配分区与消费者的对应关系,从而实现了水平扩展的能力。
+
 
 
 # Zookeeper
