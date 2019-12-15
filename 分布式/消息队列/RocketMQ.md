@@ -1,2 +1,2 @@
-# RocketMQ
+# RocketMQ特点
 
