@@ -151,7 +151,7 @@
         * [redis](分布式/分布式缓存/redis.md)
             * [redis安装和使用](分布式/分布式缓存/redis安装和使用.md)
             * [redis命令使用](分布式/分布式缓存/redis命令使用.md)
-            * [redis单线程](分布式/分布式缓存/redis单线程.md)
+            * [redis单线程模型](分布式/分布式缓存/redis单线程.md)
             * [数据结构](分布式/分布式缓存/redis/数据结构.md)
                 * [字符串](分布式/分布式缓存/redis/数据结构/字符串.md)
                 * [List](分布式/分布式缓存/redis/数据结构/List.md)
